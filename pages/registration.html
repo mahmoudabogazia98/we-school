@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration | WE School Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #0f172a;
+      --bg2: #07103a;
+      --text: #e6eef8;
+      --muted: #9fb0d6;
+      --button: #2563eb;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+      background: radial-gradient(1000px 600px at 10% 20%, rgba(96,165,250,0.12), transparent),
+                  radial-gradient(800px 600px at 90% 80%, rgba(110,231,183,0.08), transparent),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:var(--text);
+      display:flex;align-items:center;justify-content:center;padding:32px;
+    }
+
+    .container{
+      width:100%;max-width:460px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:14px;padding:28px;box-shadow:0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.04);
+      backdrop-filter: blur(8px);
+    }
+
+    h1{margin:0 0 6px;font-size:22px;text-align:center}
+    p.lead{margin:0 0 18px;color:var(--muted);font-size:14px;text-align:center}
+
+    fieldset{
+      border-radius:10px;border:1px solid rgba(255,255,255,0.06);padding:18px 16px 14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+    }
+    legend{padding:0 10px;font-weight:600;color:var(--text)}
+
+    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+    input[type="text"], input[type="password"], input[type="email"]{
+      width:100%;padding:12px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:var(--text);font-size:14px;outline:none
+    }
+    .input-row{margin-bottom:14px}
+
+    .actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px}
+    .btn{
+      display:inline-block;padding:10px 18px;border-radius:10px;border:none;background:var(--button);color:#fff;font-weight:600;cursor:pointer;box-shadow:0 8px 20px rgba(37,99,235,0.12);text-decoration:none;text-align:center
+    }
+    .link{font-size:13px;color:var(--muted);text-decoration:none}
+    .link:hover{color:var(--text)}
+
+    .small{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+
+    @media (max-width:460px){
+      .container{padding:20px;border-radius:12px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Create Account</h1>
+    <p class="lead">Register to join WE School portal</p>
+
+    <form id="registerForm" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div class="input-row">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" name="fullname" type="text" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-row">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Choose a username" required>
+        </div>
+
+        <div class="input-row">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="input-row">
+          <label for="confirm">Confirm Password</label>
+          <input id="confirm" name="confirm" type="password" placeholder="Re-enter your password" required>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Register</button>
+          <a class="link" href="../index.html">Back to login</a>
+        </div>
+
+        <p class="small">By registering, you agree to the WE School terms and privacy policy.</p>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>

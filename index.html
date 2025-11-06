@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WE School - Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        fieldset {
+            border: 2px solid #0072ff;
+            border-radius: 10px;
+            width: 100%;
+            padding: 20px;
+        }
+        legend {
+            font-size: 1.4em;
+            color: #0072ff;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #0072ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #005fcc;
+        }
+        .links {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+        }
+        .links a {
+            text-align: center;
+            color: #0072ff;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #0072ff;
+            border-radius: 5px;
+            padding: 8px;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background-color: #0072ff;
+            color: white;
+        }
+        button a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <fieldset>
+            <legend>Login</legend>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="button"><a href="./pages/home.html">Login</a></button>
+            </form>
+        </fieldset>
+
+        <div class="links">
+            <a href="./pages/registration.html">Create New Account</a>
+            <a href="./pages/booking.html">Go to Booking Page</a>
+            <a href="/pages/blog.html">Go to Blog Page</a>
+        </div>
+    </div>
+</body>
+</html>

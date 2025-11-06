@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WE School - Blog</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #0072ff;
+      margin: 0;
+    }
+
+    .blog-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 40px 20px;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 30%;
+      min-width: 270px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .content {
+      padding: 15px;
+    }
+
+    .content h3 {
+      margin-top: 0;
+      color: #0072ff;
+    }
+
+    .content p {
+      color: #333;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .content button {
+      background: #0072ff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .content button:hover {
+      background: #005fcc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      font-size: 14px;
+      color: #555;
+    }
+
+    a {
+      color: #0072ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .post {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WE School Blog</h1>
+    <p>Stay updated with our latest news and articles</p>
+  </header>
+
+  <div class="blog-container">
+    <div class="post">
+      <img src="../assits/card.jpg" alt="Post 1" />
+      <div class="content">
+        <h3>New Tech Projects at WE School</h3>
+        <p>Discover how our students are building innovative web and AI solutions that can benefit Egypt’s future.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="../assits/مدرسة-we-1.jpg" alt="Post 2" />
+      <div class="content">
+        <h3>How We Learn Coding</h3>
+        <p>Learn more about how students master web technologies through hands-on projects and teamwork.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="../assits/images.jpeg" alt="Post 3" />
+      <div class="content">
+        <h3>Our Future Goals</h3>
+        <p>WE School students are planning to develop robotics and AI systems to serve Egyptian industries.</p>
+        <button>Read More</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p> 2025 WE School | <a href="./home.html">Back to Home</a></p>
+  </footer>
+</body>
+</html>
